@@ -6,10 +6,10 @@ int main(void){
     /*
     if the input is n = 4 then the output will be
 
-    1
-    2 2
-    3 3 3
-    4 4 4 4
+    A 
+    B c
+    D E F
+    G H I J
     
     */
 
@@ -20,13 +20,15 @@ int main(void){
    cin >> n;
 
    int row = 1;
+   char ch = 'A'; //Since both the code are in same class I am onlydeclaring ch one time
 
     while (row <= n)
     {
         int column = 1;
         while (column <= row)
         {
-            cout << row << " ";
+            cout << ch << " ";
+            ch++;
             column++;
         }
         cout << endl;
@@ -39,7 +41,8 @@ int main(void){
     {
         for (int column = 1; column <= row; column++)
         {
-            cout << row << " ";
+            cout << ch << " ";
+            ch++;
         }
         cout << endl;
     }

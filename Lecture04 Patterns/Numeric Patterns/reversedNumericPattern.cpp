@@ -7,9 +7,9 @@ int main(void){
     if the input is n = 4 then the output will be
 
     1
-    2 2
-    3 3 3
-    4 4 4 4
+    2 1
+    3 2 1
+    4 3 2 1
     
     */
 
@@ -26,7 +26,7 @@ int main(void){
         int column = 1;
         while (column <= row)
         {
-            cout << row << " ";
+            cout << row - column + 1 << " ";
             column++;
         }
         cout << endl;
@@ -39,7 +39,7 @@ int main(void){
     {
         for (int column = 1; column <= row; column++)
         {
-            cout << row << " ";
+            cout << row - column + 1 << " ";
         }
         cout << endl;
     }

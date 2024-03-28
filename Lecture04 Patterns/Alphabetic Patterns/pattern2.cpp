@@ -6,10 +6,10 @@ int main(void){
     /*
     if the input is n = 4 then the output will be
 
-    1
-    2 2
-    3 3 3
-    4 4 4 4
+    A 
+    B B 
+    C C C 
+    D D D D
     
     */
 
@@ -26,7 +26,8 @@ int main(void){
         int column = 1;
         while (column <= row)
         {
-            cout << row << " ";
+            char ch = 'A' + row - 1;
+            cout << ch << " ";
             column++;
         }
         cout << endl;
@@ -39,7 +40,8 @@ int main(void){
     {
         for (int column = 1; column <= row; column++)
         {
-            cout << row << " ";
+            char ch = 'A' + row - 1;
+            cout << ch << " ";
         }
         cout << endl;
     }
