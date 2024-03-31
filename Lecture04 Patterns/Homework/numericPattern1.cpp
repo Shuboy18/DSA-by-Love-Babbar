@@ -17,44 +17,41 @@ int main(void)
     // while loop
 
     int n;
-    cin >> n;
+
+    cout<<"Enter the value of n : ";
+    cin>>n;
 
     int row = 1;
 
-    while (row <= n)
-    {
-        int column = 1;
-        int space = row - 1;
-        while (space)
-        {
-            cout << " ";
-            space--;
-        }
-        while (column <= n - row + 1)
-        {
-            cout <<row;
+    while(row <= n) {
+        int column = 0;
+
+        while(column < row) {
+            cout<<"  ";
             column++;
         }
-        cout << endl;
-        row++;
+
+        while(column <= n) {
+            cout<<row<<" ";
+            column++;
+        }
+
+        cout<<endl;
+        row = row + 1;
     }
 
     // for loop
 
-    for (int row = 1; row <= n; row++)
-    {
-        int space = row - 1;
-        int result = n - row + 1;
-        while (space)
-        {
-            cout << " ";
-            space--;
+    for (int row = 1; row <= n; row++) {
+        for (int column = 0; column < row; column++) {
+            cout << "  ";
         }
-
-        for (int column = 1; column <= n - row + 1; column++)
-        {
-            cout << row;
+        
+        for (int column = row; column <= n; column++) {
+            cout << row << " ";
         }
+        
         cout << endl;
     }
+
 }

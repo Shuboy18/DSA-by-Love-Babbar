@@ -17,27 +17,28 @@ int main(void)
     // while loop
 
     int n;
-    cin >> n;
+
+    cout<<"Enter the value of n : ";
+    cin>>n;
 
     int row = 1;
     int count = 1;
 
-    while (row <= n)
-    {
-        int column = 1;
-        int space = n - row + 1;
-        while (space)
-        {
-            cout << " ";
-            space--;
+    while(row <= n) {
+        int column = 0;
+
+        while(column < n-row) {
+            cout<<"  ";
+            column++;
         }
-        while (column <= row)
-        {
-            cout <<count;
+
+        while(column < n) {
+            cout<<count<<" ";
             count++;
             column++;
         }
-        cout << endl;
+
+        cout<<endl;
         row++;
     }
 

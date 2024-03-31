@@ -17,67 +17,55 @@ int main(void)
     // while loop
 
     int n;
-    cin >> n;
+
+    cout<<"Enter the value of n : ";
+    cin>>n;
 
     int row = 1;
-    while (row <= n)
-    {
-        // Print Spaces or 1st Triangle
-        int space = n - row;
-        while (space)
-        {
-            cout << " ";
-            space--;
-        }
 
-        // Print 2nd Triangle
-        int column = 1;
-        while (column <= row)
-        {
-            cout << column;
+    while(row <= n) {
+        int column = 0;
+
+        while(column < n-row) {
+            cout<<"  ";
             column++;
         }
 
-        // Print 3rd Triangle
+        int count = 1;
 
-        int start = row - 1;
-        while (start)
-        {
-            cout << start;
-            start--;
+        while(count <= row) {
+            cout<<count<<" ";
+            count++;
         }
 
-        cout << endl;
+        count--;
+
+        while(count > 1) {
+            count--;
+            cout<<count<<" ";
+        }
+
+        cout<<endl;
         row++;
     }
 
     // for loop
 
-    // Print for 1st Triangle
-
-    for (int row = 1; row <= n; row++)
-    {
-        int space = n - row;
-        while (space)
-        {
-            cout << " ";
-            space--;
+    for (int row = 1; row <= n; row++) {
+        for (int column = 0; column < n - row; column++) {
+            cout << "  ";
         }
 
-        // Print for Second Triangle
-
-        for (int column = 1; column <= row; column++)
-        {
-            cout << column;
+        for (int count = 1; count <= row; count++) {
+            cout << count << " ";
         }
 
-        // Print for 3rd Triangle
-        int start = row - 1;
-        while(start)
-        {
-            cout << start;
-            start--;
+        for (int count = row - 1; count > 0; count--) {
+            cout << count << " ";
         }
+
         cout << endl;
     }
+
+    return 0;
 }

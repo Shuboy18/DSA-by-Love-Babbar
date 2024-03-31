@@ -5,18 +5,16 @@ int main(void)
 {
 
     /*
-    if the input is n = 4 then the output will be
+    if the input is n = 4 then the output should be
 
-    * * * *
-      * * *
-        * *
-          *
-    
+          1
+        2 2
+      3 3 3
+    4 4 4 4
+
     */
 
-    // while loop
-
-    int n;
+     int n;
 
     cout<<"Enter the value of n : ";
     cin>>n;
@@ -26,31 +24,33 @@ int main(void)
     while(row <= n) {
         int column = 0;
 
-        while(column < row) {
+        while(column < n-row) {
             cout<<"  ";
             column++;
         }
 
-        while(column <= n) {
-            cout<<"* ";
+        while(column < n) {
+            cout<<row<<" ";
             column++;
         }
 
         cout<<endl;
-        row = row + 1;
+        row++;
     }
 
     // for loop
 
     for (int row = 1; row <= n; row++) {
-        for (int column = 0; column < row; column++) {
+        for (int column = 1; column <= n - row; column++) {
             cout << "  ";
         }
 
-        for (int column = row; column <= n; column++) {
-            cout << "* ";
+        for (int column = 1; column <= row; column++) {
+            cout << row << " ";
         }
 
         cout << endl;
     }
+
+    return 0;
 }
