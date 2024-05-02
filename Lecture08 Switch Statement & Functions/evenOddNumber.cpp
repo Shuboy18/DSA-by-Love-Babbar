@@ -34,3 +34,15 @@ int main(){
 
     return 0;
 }
+
+
+/*
+
+    OUTPUT:
+
+    Enter the value: 
+    6
+    The Number is EVEN!
+
+
+*/

@@ -32,3 +32,16 @@ int main(void){
     cout << "Total Number of Setbits are: " << answer << endl;
 
 }
+
+
+/*
+
+    OUTPUT:
+
+    Enter the value of a: 
+    5
+    Enter the value of b: 
+    4
+    Total Number of Setbits are: 3
+
+*/

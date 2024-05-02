@@ -1,32 +1,32 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    while (true) { 
-        char choice;
-        cout << "Enter a choice (a, b, c) or 'q' to quit: ";
-        cin >> choice;
+// int main() {
+//     while (true) { 
+//         char choice;
+//         cout << "Enter a choice (a, b, c) or 'q' to quit: ";
+//         cin >> choice;
 
-        switch (choice) {
-            case 'a':
-                cout << "You chose 'a'\n";
-                break;  // Breaks out of the switch statement
-            case 'b':
-                cout << "You chose 'b'\n";
-                break;  // Breaks out of the switch statement
-            case 'c':
-                cout << "You chose 'c'\n";
-                break;  // Breaks out of the switch statement
-            case 'q':
-                cout << "Exiting program...\n";
-                return 0;
-            default:
-                cout << "Invalid choice\n";
-        }
-    }
+//         switch (choice) {
+//             case 'a':
+//                 cout << "You chose 'a'\n";
+//                 break;  // Breaks out of the switch statement
+//             case 'b':
+//                 cout << "You chose 'b'\n";
+//                 break;  // Breaks out of the switch statement
+//             case 'c':
+//                 cout << "You chose 'c'\n";
+//                 break;  // Breaks out of the switch statement
+//             case 'q':
+//                 cout << "Exiting program...\n";
+//                 return 0;
+//             default:
+//                 cout << "Invalid choice\n";
+//         }
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 // OR
 
@@ -40,13 +40,13 @@ int main() {
 
         switch (choice) {
             case 'a':
-                std::cout << "You chose 'a'\n";
+                std::cout << "You choose 'a'\n";
                 break; 
             case 'b':
-                std::cout << "You chose 'b'\n";
+                std::cout << "You choose 'b'\n";
                 break; 
             case 'c':
-                std::cout << "You chose 'c'\n";
+                std::cout << "You choose 'c'\n";
                 break;  
             case 'q':
                 std::cout << "Exiting program...\n";
@@ -70,5 +70,20 @@ int main() {
 
     Using continue within a switch block doesn't make sense because continue is designed for loop 
     control flow not for switching between different case blocks within a switch statement
+
+*/
+
+/*
+
+    OUTPUT: (For both the programs)
+
+    Enter a choice (a, b, c) or 'q' to quit: a
+    You choose 'a'
+    Enter a choice (a, b, c) or 'q' to quit: b
+    You choose 'b'
+    Enter a choice (a, b, c) or 'q' to quit: c
+    You choose 'c'
+    Enter a choice (a, b, c) or 'q' to quit: q
+    Exiting program...
 
 */

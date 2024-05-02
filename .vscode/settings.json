@@ -11,6 +11,8 @@
     "utility": "cpp",
     "random": "cpp",
     "valarray": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "bitset": "cpp",
+    "chrono": "cpp"
   }
 }
